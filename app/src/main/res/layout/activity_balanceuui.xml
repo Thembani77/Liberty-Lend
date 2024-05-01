@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Balanceuui">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="13sp"
+        android:layout_marginTop="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:letterSpacing="0.02"
+            android:text="Welcome to LibertyLend!"
+            android:textColor="#843F92"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:onClick="bell"
+            android:layout_height="match_parent"
+            android:layout_marginStart="70sp"
+            android:src="@drawable/bellring"
+            android:contentDescription="TODO" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="392dp"
+        android:layout_height="22sp"
+        android:background="@drawable/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:letterSpacing="0.02"
+            android:text="Your balance"
+            android:textAlignment="center"
+            android:textColor="#843F92"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11sp"
+            android:letterSpacing="0.02"
+            android:text="R462.23"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" >
+
+        <ImageView
+            android:layout_width="350sp"
+            android:elevation="1sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="10sp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bluecard"/>
+
+        <ImageView
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44sp"
+            android:elevation="2sp"
+            android:src="@drawable/middlecard" />
+
+        <ImageView
+            android:layout_width="330sp"
+            android:layout_marginTop="140sp"
+            android:layout_marginStart="55sp"
+            android:layout_height="wrap_content"
+            android:elevation="3sp"
+            android:src="@drawable/frontcard"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="382dp"
+        android:background="@drawable/bluebg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction History"
+                android:textSize="22sp"
+                android:layout_marginStart="15sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.02"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_condensed_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:layout_marginStart="100sp"
+                android:textColor="#843F92"
+                android:textSize="15sp"     />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/downarrow"/>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10sp"
+            android:layout_height="70sp">
+
+            <LinearLayout
+                android:layout_width="70sp"
+                android:layout_marginTop="4sp"
+                android:layout_height="65sp"
+                android:layout_marginStart="10sp"
+                android:background="@drawable/googlebox">
+
+                <ImageView
+                    android:layout_width="60sp"
+                    android:layout_marginStart="4sp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/sportify"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="180sp"
+                android:layout_marginStart="15sp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#843F92"
+                    android:layout_marginStart="15sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.02"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:textSize="25sp"
+                    android:text="Spotify"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.02"
+                    android:text="Yesterday"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:textSize="22sp"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginBottom="7sp"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="-R220.43"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:layout_marginStart="6sp"
+                android:layout_marginTop="22sp"
+                android:letterSpacing="0.02"
+                android:textAlignment="center"
+                android:textColor="@color/black"/>
+
+
+
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="18sp"
+                android:layout_height="70sp">
+
+                <LinearLayout
+                    android:layout_width="70sp"
+                    android:layout_marginTop="4sp"
+                    android:layout_height="65sp"
+                    android:layout_marginStart="10sp"
+                    android:background="@drawable/googlebox">
+
+                    <ImageView
+                        android:layout_width="60sp"
+                        android:layout_marginStart="5sp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/food"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="180sp"
+                    android:layout_marginStart="15sp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#843F92"
+                        android:layout_marginStart="15sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.02"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_condensed_regular"
+                        android:textSize="25sp"
+                        android:text="Food"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.02"
+                        android:text="Yesterday"
+                        android:fontFamily="@font/roboto_condensed_regular"
+                        android:textSize="22sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginBottom="7sp"/>
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="-R54.24"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="6sp"
+                    android:layout_marginTop="22sp"
+                    android:letterSpacing="0.02"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8sp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="190sp"
+                android:background="@drawable/bottombalanceui"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="6sp"
+                android:layout_height="66sp">
+
+                <LinearLayout
+                    android:layout_width="120sp"
+                    android:layout_height="55sp"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginTop="5sp"
+                    android:background="@drawable/bottomhome">
+
+                    <Button
+                        android:layout_width="28sp"
+                        android:onClick="backtohome"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/homt"
+                        android:layout_margin="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto_condensed_regular"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:letterSpacing="0.02"
+                        android:layout_marginTop="15sp"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="30sp"
+                    android:onClick="profile_balanceui"
+                    android:layout_margin="15sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/profile"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="70sp"
+                android:layout_marginTop="10sp"
+                android:layout_height="66sp"
+                android:background="@drawable/addcardbg"
+                android:layout_marginStart="100sp">
+
+                <Button
+                    android:layout_width="33sp"
+                    android:onClick="addcard_balanceui"
+                    android:layout_height="33sp"
+                    android:layout_margin="18.5sp"
+                    android:background="@drawable/addbg"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

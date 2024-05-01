@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signUpui">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_margin="7sp"
+        android:layout_height="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5sp"
+            android:background="@drawable/banklogo"/>
+
+        <TextView
+            android:layout_marginTop="10sp"
+            android:letterSpacing="0.02"
+            android:layout_width="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:layout_marginStart="15sp"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"/>
+
+
+        <LinearLayout
+            android:layout_width="30sp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="210sp"
+            android:background="@drawable/gsuback">
+
+            <Button
+                android:layout_width="20sp"
+                android:layout_marginTop="4sp"
+                android:onClick="gsuback"
+                android:layout_marginStart="4sp"
+                android:layout_height="20sp"
+                android:id="@+id/gsuback"
+                android:background="@drawable/gsuarrow"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="550sp"
+        android:textAlignment="textEnd"
+        android:background="@drawable/gsubg"
+        android:elevation="-1sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="450sp"
+        android:layout_marginBottom="36dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="4sp"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:letterSpacing="0.02"
+            android:text="Sign Up Stage"
+            android:textColor="#843F92"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="22sp"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="2sp"
+            android:text="Use Your email and password to secure your data"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="20sp"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:letterSpacing="0.02"
+            android:text="Enter a six-digit code"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:layout_margin="15sp"
+            android:background="@drawable/edittextbg"
+            android:inputType="numberPassword"
+            android:paddingStart="22sp"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:letterSpacing="0.02"
+            android:text="Enter your email"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:layout_margin="15sp"
+            android:background="@drawable/edittextbg"
+            android:paddingStart="22sp"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="446dp"
+        android:layout_height="423dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/gsubottomflower"
+        android:elevation="-4sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="252dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="264dp"
+        android:background="@drawable/gsubuttomflower2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        tools:ignore=",MissingConstraints" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="290sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/getstartedui"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:letterSpacing="0.02"
+        android:onClick="signup"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#CCBBCC"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
