@@ -21,9 +21,13 @@ Key Features:
 # LibertyLent: Empowering Banking for the Modern Era
 
 <img src="https://github.com/Thembani77/Liberty-Lend/assets/121121729/110facfc-9db9-493c-b459-920cfbadd2cf" width ="270" height = "570">
+
 <img src="https://github.com/Thembani77/Liberty-Lend/assets/121121729/1dd3bb6b-c428-435f-bfaa-90ba7a1a47f6" width ="270" height = "570">
+
 <img src="https://github.com/Thembani77/Liberty-Lend/assets/121121729/b5fde2c6-3921-4881-9346-f5f49ee2d142" width ="270" height = "570">
+
 <img src="https://github.com/Thembani77/Liberty-Lend/assets/121121729/78a4348a-0250-4548-8f34-8368c5949eed" width ="270" height = "570">
+
 <img src="https://github.com/Thembani77/Liberty-Lend/assets/121121729/62ba85f3-b5ed-44ad-bf5e-587f87f3bd7d" width ="270" height = "570">
 
 
